@@ -8,11 +8,11 @@
       <fieldset>
 
         <label for="pituus">Pituutesi: </label>
-        <input type="number" id="pituus" name="pituus" placeholder="pituutesi muodossa cm" oninput="validity.valid||(value='');" />
+        <input type="number" id="pituus" name="pituus" placeholder="pituutesi muodossa cm" min="0" oninput="validity.valid||(value='');" />
         <span class="validity"></span>
 
         <label for="paino">Painosi: </label>
-        <input type="number" id="paino" name="paino" placeholder="painosi muodossa kg" oninput="validity.valid||(value='');" />
+        <input type="number" id="paino" name="paino" placeholder="painosi muodossa kg" min="0" oninput="validity.valid||(value='');" />
         <span class="validity"></span>
 
 
