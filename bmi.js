@@ -6,6 +6,7 @@ function bmi() {
 
 
 
+
   if (tulos < 15) {
     document.getElementById('bmi').innerHTML = "<h3 id='sairas'>" + "Painoindeksisi on " + tulos + " , olet sairaalloisen alipainoinen" + "</h3>";
   } else if (tulos >= 15 && tulos < 17.5) {
