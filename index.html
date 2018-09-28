@@ -2,16 +2,33 @@
 <head>
   <script src="bmi.js"></script>
   <body>
+    <h1>Laske Painoindeksisi!</h1>
     <form>
       <fieldset>
+
         <label for="pituus">Pituutesi: </label>
-        <input type="number" id="pituus" name="pituus" placeholder="pituutesi muodossa cm" step=10 />
+        <input type="number" id="pituus" name="pituus" placeholder="pituutesi muodossa cm" />
         <span class="validity"></span>
 
         <label for="paino">Painosi: </label>
-        <input type="number" id="paino" name="paino" placeholder="painosi muodossa kg" step=10 />
+        <input type="number" id="paino" name="paino" placeholder="painosi muodossa kg" />
         <span class="validity"></span>
+
+        <input type="submit" value="Laske!" onClick="bmi()" />
+
       </fieldset>
+      <br />
+      <h2>Painoindeksin viitearvot</h2>
+      <ul>
+        <li>alle 15: Sairaalloinen alipaino.</li>
+        <li>15-17: merkittävä alipaino</li>
+        <li>17 - 18,5: normaalia alhaisempi paino</li>
+        <li>18,5 - 25: normaali paino</li>
+        <li>25 - 30: lievä ylipaino</li>
+        <li>30 - 35: merkittävä ylipaino</li>
+        <li>35 - 40: vaikea ylipaino</li>
+        <li> yli 40: sairaalloinen ylipaino</li>
+      </ul>
     </form>
   </body>
 </head>
