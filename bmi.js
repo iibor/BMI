@@ -8,19 +8,19 @@ function bmi() {
 
   if (tulos < 15) {
     document.getElementById('bmi').innerHTML = "<h3 id='sairas'>" + "Painoindeksisi on " + tulos + " , olet sairaalloisen alipainoinen" + "</h3>";
-  } else if (tulos >= 15 && tulos <= 17) {
+  } else if (tulos >= 15 && tulos < 17.5) {
   document.getElementById('bmi').innerHTML = "<h3 id='sairas'>" + "Painoindeksisi on " + tulos +
     ", eli olet merkittävästi alipainoinen" + "</h3>";
-  } else if (tulos >= 17 && tulos <= 18.5) {
+  } else if (tulos >= 17.5 && tulos < 19) {
   document.getElementById('bmi').innerHTML = "<h3 id='lieva'>" + "Painoindeksisi on " + tulos +
     ", sinulla on normaalia alhaisempi paino" + "</h3>";
-  } else if (tulos >= 18.5 && tulos <= 25) {
+  } else if (tulos >= 19 && tulos < 26) {
     document.getElementById('bmi').innerHTML = "<h3 id='normaali'>" + "Painoindeksisi on " + tulos + " eli olet normaalipainoinen" + "</h3>";
-  } else if (tulos >= 25 && tulos <= 30) {
+  } else if (tulos >= 26 && tulos < 31) {
     document.getElementById('bmi').innerHTML = "<h3 id='lieva'>" + "Painoindeksisi on " + tulos + " eli olet lievästi ylipainoinen" + "</h3>";
-  } else if (tulos >= 30 && tulos <= 35) {
+  } else if (tulos >= 31 && tulos < 36) {
     document.getElementById('bmi').innerHTML = "<h3 id='lieva'>" + "Painoindeksisi on " + tulos + " eli olet merkittävästi ylipainoinen" + "</h3>";
-  } else if (tulos >= 35 && tulos <= 40) {
+  } else if (tulos >= 36 && tulos < 41) {
     document.getElementById('bmi').innerHTML = "<h3 id='sairas'>" + "Painoindeksisi on " + tulos + " eli olet vaikeasti ylipainoinen"+ "</h3>";
   } else {
     document.getElementById('bmi').innerHTML = "<h3 id='sairas'>" + "Painoindeksisi on " + tulos + " eli olet sairaalloisen ylipainoinen" + "</h3>";
