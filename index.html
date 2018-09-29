@@ -20,6 +20,7 @@
       <fieldset>
 <div class="form-group">
         <label for="pituus">Pituutesi: </label>
+        <!--tarkistetaan ettei lomakkeelle syötetä negatiivista lukua -->
         <input type="number" class="form-control" id="pituus" name="pituus" placeholder="pituutesi muodossa cm" min="0" oninput="validity.valid||(value='');" required />
         <span class="validity"></span>
 <br />
@@ -28,6 +29,7 @@
         <span class="validity"></span>
       </div>
         <input type="submit" class="btn btn-primary" value="Laske!" onClick="bmi()" />
+        <!-- tulostetaan tulos laskutoimituksen jälkeen -->
         <div id="bmi"></div>
 
 
