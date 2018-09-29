@@ -2,25 +2,42 @@
 <head>
   <script src="bmi.js"></script>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap.css">
   <body>
-    <h1>Laske Painoindeksisi!</h1>
-    <form>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <h1 id="keskitys">Laske Painoindeksisi!</h1>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+
+
       <fieldset>
-
+<div class="form-group">
         <label for="pituus">Pituutesi: </label>
-        <input type="number" id="pituus" name="pituus" placeholder="pituutesi muodossa cm" min="0" oninput="validity.valid||(value='');" />
+        <input type="number" class="form-control" id="pituus" name="pituus" placeholder="pituutesi muodossa cm" min="0" oninput="validity.valid||(value='');" required />
         <span class="validity"></span>
-
+<br />
         <label for="paino">Painosi: </label>
-        <input type="number" id="paino" name="paino" placeholder="painosi muodossa kg" min="0" oninput="validity.valid||(value='');" />
+        <input type="number" class="form-control" id="paino" name="paino" placeholder="painosi muodossa kg" min="0" oninput="validity.valid||(value='');" required />
         <span class="validity"></span>
-
+      </div>
+        <input type="submit" class="btn btn-primary" value="Laske!" onClick="bmi()" />
+        <div id="bmi"></div>
 
 
       </fieldset>
-      </form>
-    <input type="submit" value="Laske!" onClick="bmi()" />
-    <div id="bmi"></div>
+
+
+
+    </div>
+    <fieldset>
+    <div class="col>"
     <h2>Painoindeksin viitearvot</h2>
     <ul>
       <li>alle 15: Sairaalloinen alipaino.</li>
@@ -32,6 +49,11 @@
       <li>36 - 40: vaikea ylipaino</li>
       <li> yli 40: sairaalloinen ylipaino</li>
     </ul>
-  </body>
+  </div>
+</fieldset>
+</div>
+</div>
+
+</body>
 </head>
 </html>

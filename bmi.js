@@ -1,12 +1,15 @@
 function bmi() {
+  //haetaan syötetyt arvot pituudelle ja painolle
   var height = document.getElementById('pituus').value;
   var weight = document.getElementById('paino').value;
+  //lasketaan BMI: paino / (pituus * 2) ja kerrotaan 10000 jotta saadaan "kokonaisluku"
   var BMI = (weight/Math.pow(height, 2)) * 10000;
+  //pienennetään desimaalit yhteen.
   var tulos = BMI.toPrecision(3);
 
 
 
-
+//käydään läpi elseif -lauseilla eri tulos-vaihtoehdot
   if (tulos < 15) {
     document.getElementById('bmi').innerHTML = "<h3 id='sairas'>" + "Painoindeksisi on " + tulos + " , olet sairaalloisen alipainoinen" + "</h3>";
   } else if (tulos >= 15 && tulos < 17.5) {

@@ -1,11 +1,21 @@
 #sairas {
-  color: red;
+  color: #ad4824;
 }
 
 #normaali {
-  color: green;
+  color: #73e064;
 }
 
 #lieva {
-  color: yellow;
+  color: #b4bf54;
+}
+
+#keskitys {
+  text-align: center;
+  padding-top: 25px;
+  color: white;
+}
+
+#bmi {
+  margin-top: 20px;
 }
