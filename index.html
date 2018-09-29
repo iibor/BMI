@@ -15,25 +15,30 @@
     <div class="container">
       <div class="row">
         <div class="col">
-
-
+<form id="lomake">
       <fieldset>
 <div class="form-group">
         <label for="pituus">Pituutesi: </label>
         <!--tarkistetaan ettei lomakkeelle syötetä negatiivista lukua -->
-        <input type="number" class="form-control" id="pituus" name="pituus" placeholder="pituutesi muodossa cm" min="0" oninput="validity.valid||(value='');" required />
+        <input type="number" class="form-control" id="pituus" name="pituus" placeholder="pituutesi muodossa cm" min="0" oninput="validity.valid||(value='');"  />
         <span class="validity"></span>
 <br />
         <label for="paino">Painosi: </label>
-        <input type="number" class="form-control" id="paino" name="paino" placeholder="painosi muodossa kg" min="0" oninput="validity.valid||(value='');" required />
+        <input type="number" class="form-control" id="paino" name="paino" placeholder="painosi muodossa kg" min="0" oninput="validity.valid||(value='');"  />
         <span class="validity"></span>
       </div>
-        <input type="submit" class="btn btn-primary" value="Laske!" onClick="bmi()" />
-        <!-- tulostetaan tulos laskutoimituksen jälkeen -->
-        <div id="bmi"></div>
-
-
+      <input type="submit" class="btn btn-primary" value="Laske!" onClick="bmi()" />
+      <!-- tulostetaan tulos laskutoimituksen jälkeen -->
+      <div id="bmi"></div>
+      <div id="arvio"></div>
       </fieldset>
+    </form>
+
+
+
+
+
+
 
 
 
