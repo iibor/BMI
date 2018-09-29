@@ -7,6 +7,11 @@ function bmi() {
   //pienennetään desimaalit yhteen.
   var tulos = BMI.toPrecision(3);
 
+//tarkistetaan onko molemmat kentät täytetty
+  if (height == "" || weight =="") {
+    window.alert("täytä molemmat kentät!");
+  } else {
+
 
 
 //käydään läpi elseif -lauseilla eri tulos-vaihtoehdot
@@ -31,5 +36,5 @@ function bmi() {
   }
 
 
-
+}
 }
